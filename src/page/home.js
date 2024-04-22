@@ -146,7 +146,7 @@ export default function Home() {
                                         <div className="col-md-6">
                                             <div className="content-block__media rellax-false">
                                                 <img width="1024" height="591"
-                                                    src="../../../assets/"
+                                                    src="https://drive.google.com/uc?export=view&id=1hneEbMjhFlDWVt__3T6CStMXrYW9IbOV"
                                                     className="content-block__image" alt="" decoding="async" loading="lazy"
                                                     sizes="(max-width: 1024px) 100vw, 1024px" />
                                             </div>

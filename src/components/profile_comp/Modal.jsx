@@ -75,7 +75,7 @@ function BidModal(props) {
           cta: '',
           img: ''
         },
-        channel: `eip155:5:0x0eA21a0e301A0296F39426cD0433b93AAD31cE3a`, // your channel address
+        channel: `eip155:5:${REACT_APP_WALLET}`, // your channel address
         env: 'staging'
       });
       
