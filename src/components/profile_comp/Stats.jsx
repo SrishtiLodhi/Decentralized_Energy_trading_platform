@@ -29,12 +29,12 @@ const Stats=()=>{
         <>
           <div className="statistics_p">
             <div className="stat-details-outer">
-                <img src="https://drive.google.com/uc?export=view&id=1uvJdhzT7_GEcEmImYMoMNJIXuxR6_CYp" className="stats-img-P" alt=""/>
+                <img crossOrigin='anonymous' src="https://drive.lienuc.com/uc?export=view&id=1uvJdhzT7_GEcEmImYMoMNJIXuxR6_CYp" className="stats-img-P" alt=""/>
                 <h2 className="total_P">Total Buy</h2>
                 <h3 className="total_value_P">{buy} KWh</h3>
             </div>
             <div className="stat-details-outer">
-              <img src="https://drive.google.com/uc?export=view&id=1X72ztmDO-OoOxhbfOtpGkXe6DcqWBNjF" className="stats-img-P"  alt=""/>
+              <img crossOrigin='anonymous' src="https://drive.lienuc.com/uc?export=view&id=1X72ztmDO-OoOxhbfOtpGkXe6DcqWBNjF" className="stats-img-P"  alt=""/>
                 <h2 className="total_P">Total Sold</h2>
                 <h3 className="total_value_P">{sell} KWh</h3>
             </div>

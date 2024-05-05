@@ -38,7 +38,7 @@ export default function Home() {
 
                                 {/* <!-- LOGO --> */}
                                 <a href="/" aria-current="page" className="w-40 nuxt-link-exact-active nuxt-link-active"
-                                    data-v-84d642e8><img width="100%" src="https://drive.google.com/uc?export=view&id=1YLkAhZKaEsVcvFvZbuNYUSL3oAla6iP7" alt="" className="h-auto" />
+                                    data-v-84d642e8><img crossOrigin='anonymous' width="100%" src="https://drive.lienuc.com/uc?export=view&id=1YLkAhZKaEsVcvFvZbuNYUSL3oAla6iP7" alt="" className="h-auto" />
                                 </a>
                                 <div className="items-center justify-between space-x-2 hidden lg:flex" data-v-84d642e8>
                                     {/* <!-- classNamees removed ---- px-8 text-sm cursor-pointer hover:text-primary-grey-dark --> */}
@@ -145,8 +145,8 @@ export default function Home() {
 
                                         <div className="col-md-6">
                                             <div className="content-block__media rellax-false">
-                                                <img width="1024" height="591"
-                                                    src="https://drive.google.com/uc?export=view&id=1hneEbMjhFlDWVt__3T6CStMXrYW9IbOV"
+                                                <img crossOrigin='anonymous' width="1024" height="591"
+                                                    src="https://drive.lienuc.com/uc?export=view&id=1hneEbMjhFlDWVt__3T6CStMXrYW9IbOV"
                                                     className="content-block__image" alt="" decoding="async" loading="lazy"
                                                     sizes="(max-width: 1024px) 100vw, 1024px" />
                                             </div>
@@ -170,8 +170,8 @@ export default function Home() {
 
                                         <div className="col-md-6">
                                             <div className="content-block__media rellax-false">
-                                                <img width="1024" height="591"
-                                                    src="https://drive.google.com/uc?export=view&id=1nHMrL6SbgZDBz7jWIzg01oZwFrIeDB8E"
+                                                <img crossOrigin='anonymous' width="1024" height="591"
+                                                    src="https://drive.lienuc.com/uc?export=view&id=1nHMrL6SbgZDBz7jWIzg01oZwFrIeDB8E"
                                                     className="content-block__image" alt="" decoding="async" loading="lazy"
                                                     sizes="(max-width: 1024px) 100vw, 1024px" />
                                             </div>
@@ -195,8 +195,8 @@ export default function Home() {
 
                                         <div className="col-md-6">
                                             <div className="content-block__media rellax-false">
-                                                <img width="1024" height="591"
-                                                    src="https://drive.google.com/uc?export=view&id=1NQDWaB4jk8wrVWcqPQQb5Hvk_byYnzwJ"
+                                                <img crossOrigin='anonymous' width="1024" height="591"
+                                                    src="https://drive.lienuc.com/uc?export=view&id=1NQDWaB4jk8wrVWcqPQQb5Hvk_byYnzwJ"
                                                     className="content-block__image" alt="" decoding="async" loading="lazy"
                                                     sizes="(max-width: 1024px) 100vw, 1024px" />
                                             </div>
@@ -217,8 +217,8 @@ export default function Home() {
                             <div className="py-8" id='section-5'>
                                 <div className="flex flex-col space-y-16 container-1080">
                                     <div className="flex flex-col-reverse md:flex-row justify-between items-center pb-16">
-                                        <div className="flex flex-col justify-center md:items-start items-center space-y-6"><img
-                                                width="100%" src="https://drive.google.com/uc?export=view&id=1YLkAhZKaEsVcvFvZbuNYUSL3oAla6iP7" alt=""
+                                        <div className="flex flex-col justify-center md:items-start items-center space-y-6"><img crossOrigin='anonymous'
+                                                width="100%" src="https://drive.lienuc.com/uc?export=view&id=1YLkAhZKaEsVcvFvZbuNYUSL3oAla6iP7" alt=""
                                                 className="h-auto w-64 md:w-40" id="special-img" />
                                             <div className="max-w-md w-full text-gray-500">
                                                 The premier interface for Energy Trading! Create your
@@ -265,7 +265,7 @@ export default function Home() {
                                                 Dashboard
                                                 </Link>
                                             }
-                                        </div> <img width="100%" src="https://drive.google.com/uc?export=view&id=1xkNLpuEPCI4TU-Sz5kMwmQNorlkIjS2r" alt=""
+                                        </div> <img crossOrigin='anonymous' width="100%" src="https://drive.lienuc.com/uc?export=view&id=1xkNLpuEPCI4TU-Sz5kMwmQNorlkIjS2r" alt=""
                                             className="h-auto w-5/6 md:w-1/2" style={{zIndex: "11"}} />
                                     </div>
 

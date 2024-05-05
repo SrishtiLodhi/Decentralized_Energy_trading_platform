@@ -12,7 +12,7 @@ export default function Profile() {
     return (
         <div className="profile_back">
           <div>
-            <img src="https://drive.google.com/uc?export=view&id=1MJ2LFcL-GNz1g4044AeZj-9nEYhJD2Un" className="background-image-P" alt=""/>
+            <img crossOrigin='anonymous' src="https://drive.lienuc.com/uc?export=view&id=1MJ2LFcL-GNz1g4044AeZj-9nEYhJD2Un" className="background-image-P" alt=""/>
           </div>
           <div className="mnu_p">
             <Menu/>

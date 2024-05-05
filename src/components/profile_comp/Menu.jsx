@@ -23,7 +23,7 @@ const Menu =()=>{
         <>
           <div className="menu_N">
             <span className="logo_N">
-              <img src="https://drive.google.com/uc?export=view&id=1jCd9ThKgNM5Ayst2U3e0-N_qxOi_lkj8" alt="err" style={{height:"30px"}}/>
+              <img crossOrigin='anonymous' src="https://drive.lienuc.com/uc?export=view&id=1jCd9ThKgNM5Ayst2U3e0-N_qxOi_lkj8" alt="err" style={{height:"30px"}}/>
             </span>
             <span className="logo_N">
               <Link to="/" className="Head_N"><span >Home</span></Link>

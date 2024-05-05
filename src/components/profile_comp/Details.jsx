@@ -10,7 +10,7 @@ const Details=()=>{
         <>
         <div className="profff_p">
           {/* <img src={profile_img} className="image_p img_p" alt=""></img> */}
-          <img src="https://drive.google.com/uc?export=view&id=1zz36AKQwtJy-YDghcwlHIxrno7tEPCBK" className="image_p img_p" alt=""></img>
+          <img crossOrigin='anonymous' src="https://drive.lienuc.com/uc?export=view&id=1zz36AKQwtJy-YDghcwlHIxrno7tEPCBK" className="image_p img_p" alt=""></img>
           </div>
           <div className="proff2_p">
             <div className="user-name-P">Hi {currentUser.name}. Welcome back!</div>

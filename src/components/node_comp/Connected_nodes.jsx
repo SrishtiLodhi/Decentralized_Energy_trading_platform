@@ -32,7 +32,7 @@ const ConnectN=()=>{
                 <div className="list_N">
                 {wallets.map(ids => 
                     <div className="WIds_N">
-                        <img src="https://drive.google.com/uc?export=view&id=1gvB9AL9ZhXy0fsPyJ7u8OHqhSqmn6Pkz"  alt="err" className="energy-connect_N"/>
+                        <img crossOrigin='anonymous' src="https://drive.lienuc.com/uc?export=view&id=1gvB9AL9ZhXy0fsPyJ7u8OHqhSqmn6Pkz"  alt="err" className="energy-connect_N"/>
                         <div className="list-item-N">{ids}</div>
                     </div>)}
                 </div>

@@ -159,7 +159,7 @@ const RightN=()=>{
 
             <div className="writt_N2">
                 <h1 className="h1_right_N">Connect New Nodes</h1>
-                <img src="https://drive.google.com/uc?export=view&id=1XnEZbZ_iqqCQ_cDopsbwEemd2i2O4yQQ"  alt="err" style={{height: "15rem", width: "14rem", margin: "auto", marginTop: "2rem"}} ></img>
+                <img crossOrigin='anonymous' src="https://drive.lienuc.com/uc?export=view&id=1XnEZbZ_iqqCQ_cDopsbwEemd2i2O4yQQ"  alt="err" style={{height: "15rem", width: "14rem", margin: "auto", marginTop: "2rem"}} ></img>
             </div>
 
             <div className="form_outer_N">
