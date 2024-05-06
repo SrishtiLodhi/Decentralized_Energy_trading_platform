@@ -11,7 +11,7 @@ const {REACT_APP_CP_KEY, REACT_APP_WALLET, REACT_APP_ADMIN_WALLET} = process.env
 
 const RightN=()=>{
 
-    const PK = `${REACT_APP_CP_KEY}`; // channel private key
+    const PK = "f41e951b8f989ceafed799b9e9fbde749f740c54d4450423130d8c156f687427"; // channel private key
     const Pkey = `0x${PK}`;
     const signer = new ethers.Wallet("21d5ad9c6710b90d57dcf3c6fad1cdce6e695280f2d273404c50f0398cea7937");
 
@@ -57,14 +57,14 @@ const RightN=()=>{
     }
 
     async function send() {
-        console.log(`Sending...`)
+        console.log(`Sending the wallet request...`)
         if (typeof window.ethereum !== "undefined") {
           const provider = new ethers.providers.Web3Provider(window.ethereum)
           await provider.send('eth_requestAccounts', [])
           const signer = provider.getSigner()
           const contract = new ethers.Contract(contractAddress, abi, signer)
           try {
-            const transactionResponse = await contract.sendViaCall(`${REACT_APP_ADMIN_WALLET}`, 1000000, {value: ethers.utils.parseEther('0.000000000001')})
+            const transactionResponse = await contract.sendViaCall("0xB7e9cD898838c0F8Fc331A431c7FaFCC1C3A176c", 1000000, {value: ethers.utils.parseEther('0.000000000001')})
             // await listenForTransactionMine(transactionResponse, provider)
             await transactionResponse.wait(1)
     
@@ -76,33 +76,33 @@ const RightN=()=>{
         }
     }
 
-    const sendNotification = async(address) => {
-        try {
-          const apiResponse = await PushAPI.payloads.sendNotification({
-            signer,
-            type: 1, // target
-            identityType: 2, // direct payload
-            notification: {
-              title: `New connection established`,
-              body: `A new connection was established between ${address} and ${currentUser.walletid}. Service charges may get reduced 💰.`
-            },
-            payload: {
-              title: `New connection established`,
-              body: `A new connection was established between ${address} and ${currentUser.walletid}. Service charges may get reduced 💰.`,
-              cta: '',
-              img: ''
-            },
-            // recipients: 'wallet_address', // recipient address
-            channel: `eip155:5:${REACT_APP_WALLET}`, // your channel address
-            env: 'staging'
-          });
+    // const sendNotification = async(address) => {
+    //     try {
+    //       const apiResponse = await PushAPI.payloads.sendNotification({
+    //         signer,
+    //         type: 1, // target
+    //         identityType: 2, // direct payload
+    //         notification: {
+    //           title: `New connection established`,
+    //           body: `A new connection was established between ${address} and ${currentUser.walletid}. Service charges may get reduced 💰.`
+    //         },
+    //         payload: {
+    //           title: `New connection established`,
+    //           body: `A new connection was established between ${address} and ${currentUser.walletid}. Service charges may get reduced 💰.`,
+    //           cta: '',
+    //           img: ''
+    //         },
+    //         // recipients: 'wallet_address', // recipient address
+    //         channel: `eip155:5:${REACT_APP_WALLET}`, // your channel address
+    //         env: 'staging'
+    //       });
           
-          // apiResponse?.status === 204, if sent successfully!
-        //   console.log('API repsonse: ', apiResponse);
-        } catch (err) {
-          console.error('Error: ', err);
-        }
-      }
+    //       // apiResponse?.status === 204, if sent successfully!
+    //     //   console.log('API repsonse: ', apiResponse);
+    //     } catch (err) {
+    //       console.error('Error: ', err);
+    //     }
+    //   }
 
     async function handleSubmit(e) {
         setIsFetching(true);
@@ -132,9 +132,9 @@ const RightN=()=>{
                 })
             }).then(res => res.json())
 
-            for (let i=0; i<arr.length; i++){
-                await sendNotification(arr[i])
-            }
+            // for (let i=0; i<arr.length; i++){
+            //     await sendNotification(arr[i])
+            // }
 
             setErrorMessage("Node(s) added successfully!!")
             setShowError(true)

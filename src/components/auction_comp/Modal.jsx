@@ -11,7 +11,7 @@ const {REACT_APP_CP_KEY, REACT_APP_WALLET, REACT_APP_ADMIN_WALLET} = process.env
 
 function Example(props) {
 
-  const PK = `${REACT_APP_CP_KEY}`; // channel private key
+  const PK = "f41e951b8f989ceafed799b9e9fbde749f740c54d4450423130d8c156f687427"; // channel private key
   const Pkey = `0x${PK}`;
   const signer = new ethers.Wallet("21d5ad9c6710b90d57dcf3c6fad1cdce6e695280f2d273404c50f0398cea7937");
   
@@ -49,14 +49,14 @@ function Example(props) {
   }
 
   async function send() {
-    console.log(`Sending...`)
+    console.log(`Sending the modal request...`)
     if (typeof window.ethereum !== "undefined") {
       const provider = new ethers.providers.Web3Provider(window.ethereum)
       await provider.send('eth_requestAccounts', [])
       const signer = provider.getSigner()
       const contract = new ethers.Contract(contractAddress, abi, signer)
       try {
-        const transactionResponse = await contract.sendViaCall("0x0eA21a0e301A0296F39426cD0433b93AAD31cE3a", net_price()*(10**18), {value: ethers.utils.parseEther(`${net_price()}`)})
+        const transactionResponse = await contract.sendViaCall("0xB7e9cD898838c0F8Fc331A431c7FaFCC1C3A176c", net_price()*(10**18), {value: ethers.utils.parseEther(`${net_price()}`)})
         // await listenForTransactionMine(transactionResponse, provider)
         await transactionResponse.wait(1)
 
@@ -68,33 +68,33 @@ function Example(props) {
     }
   }
 
-  const sendNotification = async() => {
-    try {
-      const apiResponse = await PushAPI.payloads.sendNotification({
-        signer,
-        type: 1, // target
-        identityType: 2, // direct payload
-        notification: {
-          title: `Transaction Completed`,
-          body: `${currentUser.walletid} bought ${energy} KWh from ${props.modal_bidder.current}`
-        },
-        payload: {
-          title: `Transaction Completed`,
-          body: `${currentUser.walletid} bought ${energy} KWh from ${props.modal_bidder.current}`,
-          cta: '',
-          img: ''
-        },
-        // recipients: 'eip155:5:wallet_address', // recipient address
-        channel:  `eip155:5:0x0eA21a0e301A0296F39426cD0433b93AAD31cE3a`, // your channel address
-        env: 'staging'
-      });
+  // const sendNotification = async() => {
+  //   try {
+  //     const apiResponse = await PushAPI.payloads.sendNotification({
+  //       signer,
+  //       type: 1, // target
+  //       identityType: 2, // direct payload
+  //       notification: {
+  //         title: `Transaction Completed`,
+  //         body: `${currentUser.walletid} bought ${energy} KWh from ${props.modal_bidder.current}`
+  //       },
+  //       payload: {
+  //         title: `Transaction Completed`,
+  //         body: `${currentUser.walletid} bought ${energy} KWh from ${props.modal_bidder.current}`,
+  //         cta: '',
+  //         img: ''
+  //       },
+  //       // recipients: 'eip155:5:wallet_address', // recipient address
+  //       channel:  `eip155:5:0x0eA21a0e301A0296F39426cD0433b93AAD31cE3a`, // your channel address
+  //       env: 'staging'
+  //     });
       
-      // apiResponse?.status === 204, if sent successfully!
-      // console.log('API repsonse: ', apiResponse);
-    } catch (err) {
-      console.error('Error: ', err);
-    }
-  }
+  //     // apiResponse?.status === 204, if sent successfully!
+  //     // console.log('API repsonse: ', apiResponse);
+  //   } catch (err) {
+  //     console.error('Error: ', err);
+  //   }
+  // }
 
   async function handleSubmit(e) {
     setIsFetching(true);
@@ -113,7 +113,7 @@ function Example(props) {
             })
         }).then(res => res.json())
 
-        await sendNotification()
+        // await sendNotification()
         
         setShowError(true)
         setErrorMessage("Transaction completed")
