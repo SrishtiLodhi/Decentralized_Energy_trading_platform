@@ -19,10 +19,14 @@ Thus PowerX allows peer-2-peer energy sharing between nodes (houses), in turn re
 
 ## FrontEnd Deployment
 
-The Decentralized Energy Trading Platform is deployed at [Platform Link](#).
+The Decentralized Energy Trading Platform is deployed at [powerX-UI](#).
 
 ## Smart Contract
 
-The smart contract is deployed on Amoy Testnet of Polygon blockchain. You can check it out here [https://amoy.polygonscan.com/address/0x351236895E94fA1A1978b60a0AB189af24E7b0bF](#).
+The smart contract is deployed on the Amoy Testnet of the Polygon blockchain. You can check it out here [powerX-smartContract](https://amoy.polygonscan.com/address/0x351236895E94fA1A1978b60a0AB189af24E7b0bF).
+
+## Backend Deployment
+
+The backend of powerX is deployed here - [powerX-backend](https://web3-energy-trading-backend-3.onrender.com).
 
 
