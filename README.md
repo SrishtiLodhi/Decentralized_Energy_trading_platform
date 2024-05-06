@@ -17,14 +17,12 @@ The buyer and seller must have some connection between them. This is necessary f
 
 Thus PowerX allows peer-2-peer energy sharing between nodes (houses), in turn removing dependency on a central authority.
 
-## FrontEnd Techstack
-
-- **React JS**: Frontend framework for building user interfaces.
-- **Push Protocol**: Used for sending push notifications to users.
-- **Ethers JS**: JavaScript library for interacting with Ethereum blockchain and wallets.
-
 ## FrontEnd Deployment
 
 The Decentralized Energy Trading Platform is deployed at [Platform Link](#).
+
+## Smart Contract
+
+The smart contract is deployed on Amoy Testnet of Polygon blockchain. You can check it out here [https://amoy.polygonscan.com/address/0x351236895E94fA1A1978b60a0AB189af24E7b0bF](#).
 
 
