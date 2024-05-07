@@ -17,7 +17,7 @@ function BidModal(props) {
   const Pkey = `0x${PK}`;
   const signer = new ethers.Wallet("21d5ad9c6710b90d57dcf3c6fad1cdce6e695280f2d273404c50f0398cea7937");
 
-  const API_BASE = "https://powerx-backend.onrender.com";
+  const API_BASE = "https://web3-energy-trading-backend-3.onrender.com";
 
   const [energy, setEnergy] = useState();
   const [price, setPrice] = useState();

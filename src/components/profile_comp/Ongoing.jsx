@@ -4,7 +4,7 @@ const Ongoing =()=>{
 
     const [data, setData] = useState([]);
 
-    const API_BASE = "https://powerx-backend.onrender.com";
+    const API_BASE = "https://web3-energy-trading-backend-3.onrender.com";
 
     // console.log("inside profile my live auctions")
 

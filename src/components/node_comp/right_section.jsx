@@ -17,7 +17,7 @@ const RightN=()=>{
 
     const { currentUser} = useAuth()
 
-    const API_BASE = "https://powerx-backend.onrender.com";
+    const API_BASE = "https://web3-energy-trading-backend-3.onrender.com";
     const [wallets, setWallets] = useState([])
     var selected = []
 

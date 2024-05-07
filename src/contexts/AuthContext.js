@@ -1,6 +1,6 @@
 import React, { useContext, useState, useEffect } from "react"
 
-const API_BASE = "https://powerx-backend.onrender.com";
+const API_BASE = "https://web3-energy-trading-backend-3.onrender.com";
 
 const AuthContext = React.createContext()
 

@@ -5,7 +5,7 @@ const ConnectN=()=>{
 
     const [wallets, setWallets] = useState([]);
 
-    const API_BASE = "https://powerx-backend.onrender.com";
+    const API_BASE = "https://web3-energy-trading-backend-3.onrender.com";
 
     // console.log("inside connected nodes")
 
